@@ -1,9 +1,36 @@
 # Gesture Mac
 
-A standalone native macOS utility that turns **one webcam-tracked hand** into
-pointer movement, left click, drag, right click, and vertical scroll. Built for
-the user's request to use their Mac with hand gestures. This is a practical
-pointer-control prototype, not a keyboard replacement or a medical device.
+**Control your Mac's pointer with one hand in front of the webcam.**
+
+A standalone native macOS utility (Swift + SwiftPM, zero third-party
+dependencies) that turns **one webcam-tracked hand** into pointer movement,
+left click, drag, right click, and vertical scroll using Apple's on-device
+**Vision** hand-pose tracking. This is a practical pointer-control prototype,
+not a keyboard replacement or a medical device.
+
+| | |
+| --- | --- |
+| Platform | macOS 13+, Apple Silicon (built locally) |
+| Language | Swift 5.9+, AppKit + Vision + AVFoundation + CoreGraphics |
+| Dependencies | None (no Python, npm, accounts, API keys or cloud) |
+| Status | Working prototype; synthetic checks pass, real-hand accuracy needs user testing |
+| Privacy | Frames stay in memory; nothing recorded or uploaded |
+
+> **Emergency stop at any time: Control + Option + Command + G.**
+
+## Install from source
+
+```sh
+git clone https://github.com/Dheeraj-Baghel/gesture-mac.git
+cd gesture-mac
+xcode-select --install        # Command Line Tools, if not already present
+bash build-app.sh             # produces an ad-hoc signed "Gesture Mac.app"
+```
+
+Then launch the built app (or double-click
+[Launch Gesture Mac.command](Launch%20Gesture%20Mac.command)) and follow
+**Start** below. The app bundle and test captures are intentionally not
+committed; build them locally.
 
 ## Start
 
@@ -135,6 +162,13 @@ use a physical mouse/keyboard or context menus for the remaining actions.
   input-posting code; permission-gated and display-aware.
 - AppDelegate.swift: native UI, menu bar,
   permissions, watchdog and system interruption handling.
+
+## Contributing and license
+
+Issues and pull requests are welcome; please keep the project
+dependency-free and Apple-framework-only. No license file is included yet, so
+all rights are reserved by default — open an issue if you need explicit reuse
+terms.
 
 ## Apple references
 
