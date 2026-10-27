@@ -1,0 +1,130 @@
+{
+  "assertions" : 98,
+  "checks" : [
+    {
+      "name" : "Synthetic poses",
+      "passed" : true
+    },
+    {
+      "name" : "Preview never controls",
+      "passed" : true
+    },
+    {
+      "name" : "No startup pinch click",
+      "passed" : true
+    },
+    {
+      "name" : "Neutral hold before pointer",
+      "passed" : true
+    },
+    {
+      "name" : "One down and up per click",
+      "passed" : true
+    },
+    {
+      "name" : "Short pinch debounce",
+      "passed" : true
+    },
+    {
+      "name" : "Tap cursor freeze",
+      "passed" : true
+    },
+    {
+      "name" : "Drag and release",
+      "passed" : true
+    },
+    {
+      "name" : "Immediate hand-loss release",
+      "passed" : true
+    },
+    {
+      "name" : "Low confidence release",
+      "passed" : true
+    },
+    {
+      "name" : "Multiple-hand refusal",
+      "passed" : true
+    },
+    {
+      "name" : "Stall watchdog",
+      "passed" : true
+    },
+    {
+      "name" : "Pause releases",
+      "passed" : true
+    },
+    {
+      "name" : "Disable cannot auto-resume",
+      "passed" : true
+    },
+    {
+      "name" : "Fist one toggle per hold",
+      "passed" : true
+    },
+    {
+      "name" : "Fist resume needs rearm",
+      "passed" : true
+    },
+    {
+      "name" : "Right click debounce and disable",
+      "passed" : true
+    },
+    {
+      "name" : "Scroll freezes and resets",
+      "passed" : true
+    },
+    {
+      "name" : "Scroll direction",
+      "passed" : true
+    },
+    {
+      "name" : "Open palm rests",
+      "passed" : true
+    },
+    {
+      "name" : "Old frame refusal",
+      "passed" : true
+    },
+    {
+      "name" : "Coordinate mapping",
+      "passed" : true
+    },
+    {
+      "name" : "Invalid settings recovery",
+      "passed" : true
+    },
+    {
+      "name" : "Bad landmark refusal",
+      "passed" : true
+    },
+    {
+      "name" : "Pinch hysteresis",
+      "passed" : true
+    },
+    {
+      "name" : "Time-based smoothing",
+      "passed" : true
+    },
+    {
+      "name" : "Two-corner calibration",
+      "passed" : true
+    },
+    {
+      "name" : "Calibration loss resets hold",
+      "passed" : true
+    },
+    {
+      "name" : "Calibration wrong\/small rejection",
+      "passed" : true
+    },
+    {
+      "name" : "Cancel calibration",
+      "passed" : true
+    },
+    {
+      "name" : "Calibration movement resets hold",
+      "passed" : true
+    }
+  ],
+  "failures" : 0
+}
